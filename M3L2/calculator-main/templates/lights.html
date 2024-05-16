@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  >
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../static/css/style.css">
+  <title>Расчет энергоэффективности умного дома</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__text">
+      <h1>Расчитай энергоэффективность своего дома!</h1>
+      <p>Реши проблему излишнего электропотребления самостоятельно!</p>
+    </div>
+  </header>
+  <main>
+    {% block content %}
+    <h2 class="main__title">Выбери освещение:</h2>
+    <ul class="list" id="list">
+      <li class="list__item">
+        <a href={{size + "/3" }}>
+          <img class="item__img" src="../static/img/light.svg" alt="light">
+          <span>2-4 лампочки</span></a>
+      </li>
+      <!--Задание №2 -->
+      <li class="list__item">
+        <a href={{size + "/5" }}> 
+          <img class="item__img" src="../static/img/light.svg" alt="light">
+          <span>4-6 лампочек</span></a>
+      </li>
+      <li class="list__item">
+        <a href={{size + "/10" }}>
+          <img class="item__img" src="../static/img/light.svg" alt="light">
+          <span>8 и более</span></a>
+      </li>
+      <li class="list__item">
+        <a href={{size + "/2" }}>
+          <img class="item__img" src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fmbook.kz%2Fmedia%2F18%2Fcommon%2Fimages%2F%25D1%258D%25D0%25BA%25D0%25BE%25D0%25BB%25D0%25BE%25D0%25B3%25D0%25B8%25D1%258F.png&tbnid=hfljSxwtIcPaXM&vet=12ahUKEwil2JGQ_4WGAxWJHBAIHVwdBZYQMyg4egUIARDkAQ..i&imgrefurl=https%3A%2F%2Fmbook.kz%2Fmedia%2F18%2Fitems%2F21%2Findex.html&docid=DtEzW0XiqvLTmM&w=1289&h=1271&q=%D1%8D%D0%BA%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F&ved=2ahUKEwil2JGQ_4WGAxWJHBAIHVwdBZYQMyg4egUIARDkAQ" alt="battery">
+          <span>1 - 3 лампочек</span></a>
+      </li>
+    </ul>
+    {% endblock %}
+  </main>
+  <footer>
+
+  </footer>
+</body>
+</html>
